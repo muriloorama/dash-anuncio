@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard Anuncio</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+          }
+          .chart-container {
+            width: 80%;
+            margin: 20px auto;
+          }
+          canvas {
+            max-width: 100%;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Dashboard Anuncio</h1>
+        <div class="chart-container">
+          <h2>Lead (Bom e Excelente)</h2>
+          <canvas id="qualityByDateChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h2>Quantidade Total de Bom e Excelente</h2>
+          <canvas id="qualityOverTimeChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h2>Lead Recebeu Presente</h2>
+          <canvas id="presenteByDateChart"></canvas>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+      </body>
+    </html>
